@@ -39,7 +39,7 @@
 		/**
 		 * @throws CurlRequestErrorException
 		 */
-		private function post(string $url, array $data, array $options): ClientResponseInterface
+		private function post(string $url, array $data, array $options = []): ClientResponseInterface
 		{
 			return CurlClient::client()->post($url, $data, $options);
 		}
