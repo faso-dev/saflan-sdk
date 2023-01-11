@@ -181,7 +181,6 @@
 		
 		private function mergeOptions(array $options = []): void
 		{
-			var_dump($options);
 			curl_setopt_array(
 				$this->curl,
 				$this->options + $options
